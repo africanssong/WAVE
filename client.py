@@ -2,8 +2,8 @@
 
 from socket import *
 
-ip = "127.0.0.1"
-port = 10003
+ip = "10.30.46.82"
+port = 10051
 
 clientSocket = socket(AF_INET, SOCK_STREAM)			# 소켓 생성
 clientSocket.connect((ip,port))					# 서버와 연결
