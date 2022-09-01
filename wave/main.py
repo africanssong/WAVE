@@ -8,7 +8,7 @@ import time
 # pyinstaller -i=./wave.ico -n wave -F -w main.py  wave 이름 설정. 
 
 window=tkinter.Tk()
-
+#  sdafsdf
 font = tkinter.font.Font(family="Consolas",size=40)
 
 window.title("practic")
