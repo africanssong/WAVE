@@ -44,13 +44,16 @@ clock_width.configure(bg='systemTransparent')
 
 def check_data():
     if user_id.get() == "1" and password.get() == "1":
-        window2 = Toplevel(window)
-        window2.geometry("2500x1500+0+0")  # width x height + x coor + y coor
+
+        mylist =    window.grid_slaves()
+        for i in mylist:
+            i.destroy() 
+        window.geometry("2500x1500+0+0")  # width x height + x coor + y coor
 
         # window.attributes('-alpha',0.5)   # 투명도 조절. 0~1
-        window2.wm_attributes("-transparent", True)
-        window2.wm_attributes("-topmost", 1)  # 창을 항상 상단에 배치 / 0 외 모든 인자 True
-        window2.configure(bg='systemTransparent')
+        window.wm_attributes("-transparent", True)
+        window.wm_attributes("-topmost", 1)  # 창을 항상 상단에 배치 / 0 외 모든 인자 True
+        window.configure(bg='systemTransparent')
         # window.attributes('-fullscreen',True)
 
         print("Logged IN Successfully")
