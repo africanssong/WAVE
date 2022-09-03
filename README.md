@@ -1,5 +1,5 @@
 # WAVE
-
+전창열 
 명령어
 
 pip3 install —upgrade pip3
