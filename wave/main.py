@@ -5,6 +5,8 @@ from tkinter import *
 from tkinter import messagebox
 
 import time
+import psutil
+
 # pyinstaller -i=./wave.ico -F -w main.py     # i : 아이콘 모양, f: 하나의 파일, w : 콘솔실행없음.
 # pip install pillow
 # pyinstaller -i=./wave.ico -n wave -F -w main.py  wave 이름 설정.
@@ -78,6 +80,10 @@ pw_in = Entry(window, textvariable=password).grid(
 btn = Button(window, text="Login", command=check_data).grid(
     row=2, column=1, padx=10, pady=10)
 
+###     줌 강제종료 명령어  ###
+for proc in psutil.process_iter():
+    if proc.name() == "zoom.us":
+        proc.kill()
 
 # #button
 # count=0
