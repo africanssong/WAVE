@@ -146,5 +146,5 @@ def clock():  # 현재 시간 표시 / 반복
 # text.insert(INSERT,"FDL\n")
 # text.insert(END,"—")
 # text.pack()
-
+ 
 window.mainloop()
