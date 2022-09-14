@@ -47,10 +47,10 @@ def signupmain():
 
     # 회원가입 id/pw 입력 칸 생성
     usid, uspw = StringVar(), StringVar()
-    Label(signup, text="Username : ").grid(row=0, column=0, padx=100, pady=20)
+    Label(signup, text="Username : ").grid(row=0, column=0, padx=80, pady=20)
     Entry(signup, textvariable=usid).grid(row=0, column=1, padx=100, pady=20)
 
-    Label(signup, text="Password : ").grid(row=1, column=0, padx=100, pady=20)
+    Label(signup, text="Password : ").grid(row=1, column=0, padx=80, pady=20)
     Entry(signup, textvariable=uspw).grid(row=1, column=1, padx=100, pady=20)
 
     # 중복 체크 함수
@@ -85,7 +85,7 @@ def signupmain():
         signup.destroy()
 
     # 아이디 중복 체크 버튼
-    Button(signup, text="ID check", command=check_id).grid(row=2, column=1, padx=10, pady=10)
+    Button(signup, text="ID check", command=check_id).grid(row=0, column=3, padx=10, pady=10)
 
     # 회원가입 버튼
     # 아이디 중복 체크 해야만 버튼 활성화
@@ -128,8 +128,7 @@ def check_data():
         messagebox.showinfo("로그인 정보", "Check your Username/Password")
     
     f.close()
-    
-    
+
 
 btn = Button(window, text="Login", command=check_data).grid(
     row=2, column=1, padx=10, pady=10)
