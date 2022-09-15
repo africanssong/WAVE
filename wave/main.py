@@ -10,7 +10,7 @@ import time
 from webbrowser import get
 import atexit
 import socket
-
+# pyinstaller -i=./wave.ico -n wave -F -w main.py
 
 def loginForParticipant(host, port, userID):
     mylist = window.grid_slaves()
