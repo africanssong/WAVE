@@ -189,7 +189,7 @@ def signupmain():
         smtp = smtplib.SMTP('smtp.gmail.com', 587)
         smtp.ehlo()      # say Hello
         smtp.starttls()  # TLS 사용시 필요
-        smtp.login('chjeon96@gmail.com', 'rfyejfdufjjzpfxq')
+        smtp.login('FDLKMU@gmail.com', 'vfujpeocywlciiyr')
         
         msg = MIMEText('인증번호 : '+ idenNum)
         msg['Subject'] = 'Wave 인증번호 메일'
